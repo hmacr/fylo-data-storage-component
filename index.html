@@ -1,0 +1,106 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="./output.css"
+    />
+    <title>Frontend Mentor | Fylo data storage component</title>
+  </head>
+  <body
+    class="bg-very-dark-blue bg-body-mobile md:bg-body-desktop bg-no-repeat bg-cover md:bg-contain md:bg-bottom font-raleway"
+  >
+    <!-- Container -->
+    <div
+      class="min-w-[400px] max-w-screen-lg h-screen mx-auto flex justify-center items-center"
+    >
+      <!-- Content -->
+      <div
+        class="relative flex flex-col md:flex-row gap-5 items-center md:items-end justify-center"
+      >
+        <!-- Company Info -->
+        <div
+          class="flex flex-col w-[350px] gap-10 p-12 bg-dark-blue rounded-2xl rounded-tr-[50%]"
+        >
+          <!-- Logo -->
+          <div>
+            <img
+              src="/images/logo.svg"
+              alt="log"
+            />
+          </div>
+          <!-- Icons -->
+          <div class="flex gap-4">
+            <div class="p-4 bg-very-dark-blue rounded-lg">
+              <img
+                src="/images/icon-document.svg"
+                alt="document"
+              />
+            </div>
+            <div class="p-4 bg-very-dark-blue rounded-lg">
+              <img
+                src="/images/icon-folder.svg"
+                alt="folder"
+              />
+            </div>
+            <div class="p-4 bg-very-dark-blue rounded-lg">
+              <img
+                src="/images/icon-upload.svg"
+                alt="upload"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- Storage Info -->
+        <div
+          class="w-[350px] md:w-[600px] flex flex-col items-center md:items-start gap-4 p-8 pb-16 md:pb-8 bg-dark-blue rounded-2xl"
+        >
+          <p class="text-pale-blue tracking-wide">
+            You've used <span class="font-bold">815GB</span> of your storage
+          </p>
+          <!-- Progress Bar -->
+          <div class="w-full flex flex-col gap-3">
+            <!-- Bar -->
+            <div
+              class="w-full flex items-center p-1 bg-very-dark-blue h-5 rounded-full"
+            >
+              <div
+                class="w-[81.5%] h-4 bg-gradient-to-r from-soft-orange to-soft-pink rounded-full flex justify-end items-center"
+              >
+                <div
+                  class="w-3 h-3 bg-pale-blue rounded-full mr-[2px] shadow-md"
+                ></div>
+              </div>
+            </div>
+            <!-- Stat -->
+            <div class="flex justify-between text-pale-blue font-bold">
+              <p>0 GB</p>
+              <p>1000 GB</p>
+            </div>
+          </div>
+        </div>
+        <!-- Remaining Stat -->
+        <div
+          class="absolute -bottom-14 md:right-8 md:bottom-32 w-[250px] md:w-[180px] flex items-center justify-center gap-2 p-6 md:p-4 bg-white rounded-xl shadow-lg md:after:absolute md:after:right-0 md:after:top-8 md:after:border-r-[32px] md:after:border-b-[24px] md:after:border-t-[24px] md:after:border-b-transparent md:after:border-t-transparent md:after:border-r-white"
+        >
+          <p class="text-dark-blue text-5xl md:text-3xl font-bold">185</p>
+          <p
+            class="uppercase md:text-sm text-grayish-blue text-center font-bold tracking-wider"
+          >
+            GB left
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

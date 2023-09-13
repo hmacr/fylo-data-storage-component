@@ -1,0 +1,9 @@
+{
+  "name": "fylo-data-storage-component",
+  "version": "1.0.0",
+  "author": "hmacr",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}
